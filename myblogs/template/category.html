@@ -1,0 +1,14 @@
+{%extends 'base.html' %}
+
+{%block title%} Welcome to MyBlogs {%endblock%}
+
+{% block content%}
+
+<div class="container-custom">
+    <h3>{{cat.title}}</h3>
+    <div class="img-container">
+        <img src="/media/{{cat.image}}" class="responsive-img" style="width:100%" alt="">
+    </div>
+
+</div>
+{%endblock%}
